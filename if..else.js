@@ -1,6 +1,6 @@
 function getpattern(n,pattern_no)
 {
- if(pattern_no=1)
+ if(pattern_no)
  {
     
      var totalNumberofRows = 5;
@@ -15,47 +15,46 @@ function getpattern(n,pattern_no)
         }
         
         console.log(output);
-        
         output = '';
     }
 }
 
-else if(pattern_no=2)
+else if(pattern_no1)
 {
-    var totalNumberofRows = 5;
+    var totalNumberofRaws = 5;
     
-    var output = '';
+    var output_1= '';
    
-    for (var i = 1; i <= totalNumberofRows; i++) {
+    for (var x = 1; x <= totalNumberofRaws; x++) {
         
-        for (var j = 0; j <= i; j++) {
+        for (var y = 0; y <= x; y++) {
             
-            output += j + ' ';
+            output_1 += y + ' ';
         }
         
-        console.log(output);
+        console.log(output_1);
         
-        output = '';
+        output_1 = '';
     }
 
     
 }
-else if(pattern_no=3)
+else if(pattern_no2)
 {
-    var totalNumberofRows = 5;
+    var totalNumberofraws = 4;
     
-    var output = '';
+    var output_2 = '';
     
-    for (var i = 1; i <= totalNumberofRows; i++) 
+    for (var z = 1; z <= totalNumberofraws; z++) 
     {
-        for (var j = 0; j <= i; j++) {
+        for (var k = 0; k <= z; k++) {
             
-            output += '*';
+            output_2 += '*';
         }
         
-        console.log(output);
+        console.log(output_2);
         
-        output = '';
+        output_2 = '';
     }
 
 
@@ -67,4 +66,4 @@ else
    //driver code
 }
 n=5;pattern_no=2;
-   getpattern(n,pattern_no);
+getpattern(n,pattern_no);
